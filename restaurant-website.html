@@ -1,0 +1,3139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>
+			RESTAURANT
+		</title>
+		<link rel="icon" type="images/x-icons" href="https://www.iconfinder.com/icons/5202276/animals_breed_cat_halloween_mammal_pet_smiling_icon" />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Playfair+Display:wght@400;500;600;700;900&display=swap"
+			rel="stylesheet">
+		<style>
+					:root{
+						--primary:#ebe3cd;
+						--secondary:#12202f;
+						--tershary:#f9f7ef;
+						--input:#ccc1a3;
+						--btn-primary:#df571d;
+						--btn-secondary:#6bb99b;
+						--text-primary:#fff;
+						--text-secondary:#6bb99c;
+						--text-tershary:#12202f;
+						--text-quaternary:#ebe3cd;
+						--text-quinary: #eaa73b;
+						--date:#ccc1a3;
+						--outline:#70777d;
+						--shadow:rgb(150 137 104 / 9%);
+						--footer-primary:#fa9d30;
+						--white:#fff;
+					}
+					*{
+						margin:0px;
+						padding:0px;
+						text-decoration:none;
+					}
+					section{
+						background-color:var(--primary);
+					}
+					header{
+						background-color:var(--primary);
+						padding:25px 0px 0px 0px;
+					}
+					.container{
+						box-sizing:border-box;
+						padding:0px 15px;
+						max-width:1328px;
+						width:100%;
+						margin:0px auto;
+						
+					}
+					.toolbar{
+						box-sizing:border-box;
+						width:100%;
+						padding:10px 45px;
+						color:var(--text-primary);
+						background:var(--secondary);
+						display:flex;
+						justify-content:space-between;
+						align-items:center;
+						border-radius:100px;
+					}
+					.logo{
+						width:15%;
+						font-size:1.5em;
+						font-weight:700;
+					}
+					.nev{
+						width:40%;
+						font-size: 17px;
+						font-family: "Montserrat";
+						text-align:center;
+						display:none;
+					}
+					.humberger{
+						display:block;				
+					}
+					.li-anchor{
+						color:var(--text-primary);
+						text-decoration:none;
+					}
+					.flex{
+						display:flex;
+						flex-wrap:wrap;
+						flex-direction:column;
+					}
+					.align-item{
+						align-items:center;
+					}
+					.space-between{
+						justify-content:space-between;
+					}
+					.sign-up{
+						width:10%;
+						font-size: 17px;
+						color:var(--text-secondary);
+						font-family: "Montserrat";
+						text-align:center;
+						display:none;
+					}
+					.sign-anchor{
+						color:var(--text-secondary);
+						text-decoration:none;
+					}
+					.banner-1{
+						background-image:url(banner-1-lamp.jpg);
+						background-repeat:no-repeat;
+						background-size:100% 30%;
+						background-position:-43px 490px;
+						padding:50px 0px 100px 0px;
+					}
+					.eat-drink-text{
+						font-size: 54px;
+						color: var(--text-tershary);
+						font-weight: 900;
+						font-family: "Playfair Display";
+					}
+					.block{
+						display:inline;
+					}
+					.sub-text{
+						font-size: 29px;
+						color: var(--text-tershary);
+						font-weight: 500;
+						font-family: "Montserrat";
+						padding-top:32px;
+					}
+					.discription{
+						font-size: 17px;
+						line-height:26px;
+						color: var(--text-tershary);
+						font-weight: 600;
+						font-family: "Montserrat";
+						padding:25px 0px 40px 0px;
+					}
+					.btn-primary{
+						font-size: 21px;
+						width:160px;
+						padding:15px 0px;
+						border-radius:50px;
+						color: var(--text-quaternary);
+						font-weight: 700;
+						font-family: "Montserrat";
+						text-align: center;
+						background:var(--btn-primary);
+						cursor:pointer;
+						margin:0px auto;	
+					}
+					.see-menu-text{
+						font-size: 21px;
+						color: var(--text-tershary);
+						font-weight: 700;
+						font-family: "Montserrat";
+					}
+					.see-menu-text .anchor{
+						color: var(--text-tershary);
+						text-decoration:none;
+					}
+					.width{
+						width:100%;
+						justify-content:space-between;
+						padding-bottom:255px;
+					}
+					.book-table{
+						font-size: 21px;
+						color: var(--text-tershary);
+						font-weight: 700;
+						font-family: "Montserrat";
+						margin-right:15px;
+						padding-bottom:10px;
+						margin-top:40px;
+					}
+					.arrow-1{
+						width:30px;
+						padding-bottom:50px;
+						height:10px;
+						display:none;
+					}
+					.table-back-div{
+						box-sizing:border-box;
+						width:100%;
+						padding:20px 30px 25px;
+						background:var(--tershary);
+						border-radius:30px;
+						display:flex;
+						flex-direction:column;
+						justify-content:space-between;
+					}
+					.appt{
+						width:100%;
+						display:flex;
+						flex-direction:column;
+						justify-content:space-between;
+					}
+					.date-div{
+						width:100%;
+					}
+					.mail-div{
+						width:100%;
+						
+					}
+					.avaibility{
+						width:100%;
+					}
+					label{
+						font-size: 21px;
+						color: var(--text-tershary);
+						line-height:42px;
+						font-weight: 700;
+						font-family: "Montserrat";
+					}
+					input{
+						width:100%;
+						box-sizing:border-box;
+						border-radius:20px;
+						font-size: 21px;
+						line-height:31px;
+						color: var(--text-tershary);
+						font-weight: 600;
+						font-family: "Montserrat";
+						text-align: center;
+						padding:30px 30px;
+						background-color:var(--primary);
+						outline:0px;
+						border:1px solid var(--outline);
+					}
+					.submit-btn{
+						margin-top:40px;
+						outline:0px;
+						border:var(--btn-secondary);
+						background:var(--btn-secondary);
+						color:var(--text-quaternary);
+						cursor:pointer;
+					}
+					.banner-2{
+						padding-bottom:100px;
+					}
+					.delicious{
+						font-size: 29px;
+						color: var(--text-quinary);
+						font-weight: 600;
+						font-family: "Montserrat";
+						padding-bottom:25px;
+						text-align:center;
+					}
+					.categories{
+						font-size: 50px;
+						color: var(--text-tershary);
+						font-weight: 900;
+						text-align:center;
+						padding-bottom:85px;
+						font-family: "Playfair Display";
+					}
+					.inner-div{
+						width:100%;
+						box-sizing:border-box;
+						background:var(--tershary);
+						padding:40px 35px;
+						border-radius:30px;
+						text-align:center;
+						box-shadow:-5px 5px 5px 2px var(--shadow);
+						margin-bottom:15px;
+					}			
+					.inner-heading{
+						font-size: 40px;
+						padding:30px 0px 0px 0px;
+						color: var(--text-tershary);
+						font-weight: 900;
+						text-align:center;
+						font-family: "Playfair Display";
+					}
+					.inner-btn{
+						margin:0px auto;
+						border:1px solid var(--btn-primary);
+					}
+					.inner-btn:hover{
+						background-color:var(--primary);
+						color:var(--secondary);
+						border:1px solid var(--secondary);
+					}
+					.img-dish{
+						width:189px;
+						height:189px;
+					}
+					.banner-3{
+						background-image:url(section-5bg.png);
+						background-repeat:no-repeat;
+						background-size:100% 60%;
+						background-position:center 200px;
+						padding-bottom:200px;
+					}
+					.covid-text{
+						color:var(--text-secondary);
+						font-size: 29px;
+						padding-bottom:
+						font-weight: 500;
+						font-family: "Montserrat";
+						text-align:center;
+					}
+					.padding-bottom{
+						padding-bottom:25px;
+					}
+					.btn-tershary{
+						font-size: 21px;
+						width:160px;
+						padding:15px 15px;
+						border-radius:50px;
+						background: var(--btn-secondary);
+						color: var(--text-quaternary);
+						font-weight: 700;
+						font-family: "Montserrat";
+						text-align: center;
+						cursor:pointer;
+						margin:0px auto;
+					}
+					
+					.story-div{
+						width:100%;
+						padding-bottom:155px;
+						margin-left:0px;
+					}
+					.img-div{
+						width:100%;
+						background-image:url(section-6bg.png);
+						background-repeat:no-repeat;
+						background-size:100% 80%;
+						background-position:bottom;
+						padding-bottom:450px;
+						margin-top:-200px;
+						
+					}
+					.story-text{
+						font-size: 29px;
+						color:var(--text-quinary);
+						font-weight: 400;
+						font-family: "Montserrat";
+						padding-top:55px;
+						text-align:center;
+						
+					}
+					.resto{
+						font-size: 40px;
+						color: var(--text-tershary);
+						font-weight: 900;
+						font-family: "Playfair Display";
+						padding-bottom:30px;
+						text-align:center;
+					}
+					.lorem-ipsum{
+						font-size: 17px;
+						color: var(--text-tershary);
+						font-weight: 600;
+						line-height:30px;
+						font-family: "Montserrat";
+						text-align: left;
+						padding-bottom:55px;
+					}
+					.color{
+						background:var(--btn-secondary);
+					}
+					.ingredians-div{
+						width:100%;
+						padding-bottom:80px;
+						margin-right:0px;
+						order:1;
+					}
+					.img-div-2{
+						width:100%;
+						background-image:url(section-7bg.png);
+						background-repeat:no-repeat;
+						background-size:100% 100%;
+						background-position:center;
+						padding-bottom:450px;
+						margin-top:00px;
+						order:2;
+					}
+					.words-form-chef-section{
+						padding-top:50px;
+						padding-bottom:80px;
+					}
+					.words-form-chef{
+						background-color:var(--tershary);
+						padding:0px 10px;
+						border-radius:74px;
+					}
+					.text-div{
+						width:100%;
+					}
+					.chef-img{
+						width:100%;
+					}
+					.chef-text{
+						font-size: 29px;
+						color:var(--text-secondary);
+						font-weight: 600;
+						font-family: "Montserrat";
+						padding-top:50px;
+						text-align:center;
+					}
+					.section-8-img{
+						width:100%;
+						height:450px;
+					}
+					.customer-says-div{
+						padding-bottom:100px;
+					}
+					.inner-one{
+						box-sizing:border-box;
+						width:100%;
+						background:var(--tershary);
+						border-radius: 40px;
+						padding:25px 20px;
+						margin-top:20px;
+						box-shadow: -5px 5px 5px 2px var(--shadow);
+					}
+					.center{
+						margin:20px auto 0px;
+					}
+					.name{
+						font-size: 29px;
+						color: var(--text-tershary);
+						font-weight: 900;
+						padding-bottom:20px;
+						font-family: "Playfair Display";
+					}
+					.customer-response{
+						font-size: 14px;
+						line-height:21px;
+						color:var(--text-tershary);
+						font-weight: 600;
+						text-align:center;
+						font-family: "Montserrat";
+					}
+					.star{
+						margin-top:25px;
+						margin-left:50px;
+					}
+					.inner-date{
+						font-size: 16px;
+						padding-top:15px;
+						color: var(--date);
+						font-weight: 700;
+						font-family: "Montserrat";
+						text-align: center;
+					}
+					.flex-end{
+						align-items:center;
+					}
+					.form-section{
+						
+						background-image:url(section-10bg.png);
+						background-repeat:no-repeat;
+						background-size:92% 100%;
+						background-position:center;
+						padding-bottom:100px;
+					}
+					.form-back-div{
+						width:100%;
+						margin:0px auto;
+					}
+					.input{
+						width:99.5%;
+						box-sizing:border-box;
+						border-radius:50px;
+						font-size: 21px;
+						line-height:31px;
+						color: var(--text-tershary);
+						font-weight: 600;
+						font-family: "Montserrat";
+						text-align: left;
+						padding:30px 60px 30px;
+						background-color:var(--input);
+						outline:0px;
+						border:2px solid var(--text-primary);
+						margin-bottom:30px;
+					}
+					.message-input-box{
+						padding-bottom:140px;
+						margin-bottom:40px;
+					}
+					placeholder{
+						color: var(--text-tershary);
+					}
+					.form-button{
+						font-size: 21px;
+						width:250px;
+						padding:15px 15px;
+						border-radius:50px;
+						background: var(--btn-secondary);
+						color: var(--text-quaternary);
+						font-weight: 700;
+						border:2px solid var(--text-primary);
+						font-family: "Montserrat";
+						text-align: center;
+						cursor:pointer;
+						margin:0px auto;
+					}
+					.form-button:hover{
+						background: var(--text-quaternary);
+					}
+					.button-color{
+						font-size: 21px;
+						color:var(--text-tershary);
+						font-weight: 700;
+						text-decoration:none;
+						font-family: "Montserrat";
+					}
+					.button-color:hover{
+						color: var(--btn-secondary);
+					}
+					footer{
+						padding:50px 0px;
+						background-color:var(--footer-primary);
+					}
+					.about{
+						width:100%;
+					}
+					.what-we-do{
+						width:100%;
+					}
+					.news-letter{
+						width:100%;
+						text-align:center;
+					}
+					.links{
+						color:var(--text-tershary);
+						font-size: 18px;
+						line-height: 40px;
+						font-weight: 700;
+						font-family: "Montserrat"
+					}
+					.heading{
+						font-size: 28px;
+						padding-top:15px;
+						color: var(--text-primary);
+						font-weight: 900;
+						font-family: "Playfair Display";
+						padding-bottom:10px;
+					}
+					.footer-input{
+						background:var(--footer-primary);
+						border-radius:50px;
+						padding:20px 0px;
+						border:2px solid var(--secondary);
+						margin-bottom:60px;
+					}
+					.social-media{
+						max-width:400px;
+						width:100%;
+						display: flex;
+						justify-content: space-around;
+					}
+					.facebook-img{
+						background-color: white;
+						width: 50px;
+						height: 50px;
+						border-radius: 50%;
+						background-image: url(https://cdn3.iconfinder.com/data/icons/picons-social/57/06-facebook-512.png);
+						background-repeat: no-repeat;
+						background-size: 40px 40px;
+						background-position: center center;
+					}
+					.facebook-img:hover{
+						background-image: url(https://cdn2.iconfinder.com/data/icons/social-media-and-payment/64/-04-512.png);
+						background-repeat: no-repeat;
+						background-size: 40px 40px;
+					}
+					.instagram-img{
+						background-color: white;
+						width: 50px;
+						height: 50px;
+						border-radius: 50%;
+						background-image: url(https://cdn4.iconfinder.com/data/icons/picons-social/57/38-instagram-2-512.png);
+						background-repeat: no-repeat;
+						background-size: 40px 40px;
+						background-position: center center;
+					}
+					.instagram-img:hover{
+						background-image: url(https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Instagram-512.png);
+						background-repeat: no-repeat;
+						background-size: 30px 30px;
+					}
+					.you-tube-img{
+						background-color: white;
+						width: 50px;
+						height: 50px;
+						border-radius: 50%;
+						background-image: url(https://cdn3.iconfinder.com/data/icons/font-awesome-brands/576/youtube-512.png);
+						background-repeat: no-repeat;
+						background-size: 40px 40px;
+						background-position: center center;
+					}
+					.you-tube-img:hover{
+						background-image: url(https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/395_Youtube_logo-512.png);
+						background-repeat: no-repeat;
+						background-size: 30px 30px;
+					}
+					
+			@media  screen and (min-width:576px){
+				section{
+						background-color:var(--primary);
+					}
+					header{
+						background-color:var(--primary);
+						padding:25px 0px 0px 0px;
+					}
+					.container{
+						box-sizing:border-box;
+						padding:0px 15px;
+						max-width:1328px;
+						width:100%;
+						margin:0px auto;
+						
+					}
+					.toolbar{
+						box-sizing:border-box;
+						width:100%;
+						padding:10px 45px;
+						color:var(--text-primary);
+						background:var(--secondary);
+						display:flex;
+						justify-content:space-between;
+						align-items:center;
+						border-radius:100px;
+					}
+					.logo{
+						width:15%;
+						font-size:1.5em;
+						font-weight:700;
+					}
+					.nev{
+						width:40%;
+						font-size: 17px;
+						font-family: "Montserrat";
+						text-align:center;
+						display:none;
+					}
+					.humberger{
+						display:block;				
+					}
+					.li-anchor{
+						color:var(--text-primary);
+						text-decoration:none;
+					}
+					.flex{
+						display:flex;
+						flex-wrap:wrap;
+						flex-direction:column;
+					}
+					.align-item{
+						align-items:center;
+					}
+					.space-between{
+						justify-content:space-between;
+					}
+					.sign-up{
+						width:10%;
+						font-size: 17px;
+						color:var(--text-secondary);
+						font-family: "Montserrat";
+						text-align:center;
+						display:none;
+					}
+					.sign-anchor{
+						color:var(--text-secondary);
+						text-decoration:none;
+					}
+					.banner-1{
+						background-image:url(banner-1-lamp.jpg);
+						background-repeat:no-repeat;
+						background-size:100% 40%;
+						background-position:-43px 300px;
+						padding:50px 0px 100px 0px;
+					}
+					.eat-drink-text{
+						font-size: 54px;
+						color: var(--text-tershary);
+						font-weight: 900;
+						font-family: "Playfair Display";
+					}
+					.block{
+						display:inline;
+					}
+					.sub-text{
+						font-size: 29px;
+						color: var(--text-tershary);
+						font-weight: 500;
+						font-family: "Montserrat";
+						padding-top:32px;
+					}
+					.discription{
+						font-size: 17px;
+						line-height:26px;
+						color: var(--text-tershary);
+						font-weight: 600;
+						font-family: "Montserrat";
+						padding:25px 0px 40px 0px;
+					}
+					.btn-primary{
+						font-size: 21px;
+						width:160px;
+						padding:15px 0px;
+						border-radius:50px;
+						color: var(--text-quaternary);
+						font-weight: 700;
+						font-family: "Montserrat";
+						text-align: center;
+						background:var(--btn-primary);
+						cursor:pointer;
+						margin:0px auto;	
+					}
+					.see-menu-text{
+						font-size: 21px;
+						color: var(--text-tershary);
+						font-weight: 700;
+						font-family: "Montserrat";
+					}
+					.see-menu-text .anchor{
+						color: var(--text-tershary);
+						text-decoration:none;
+					}
+					.width{
+						width:100%;
+						justify-content:space-between;
+						padding-bottom:255px;
+					}
+					.book-table{
+						font-size: 21px;
+						color: var(--text-tershary);
+						font-weight: 700;
+						font-family: "Montserrat";
+						margin-right:15px;
+						padding-bottom:10px;
+						margin-top:40px;
+					}
+					.arrow-1{
+						width:30px;
+						padding-bottom:50px;
+						height:10px;
+						display:none;
+					}
+					.table-back-div{
+						box-sizing:border-box;
+						width:100%;
+						padding:20px 30px 25px;
+						background:var(--tershary);
+						border-radius:30px;
+						display:flex;
+						flex-direction:column;
+						justify-content:space-between;
+					}
+					.appt{
+						width:100%;
+						display:flex;
+						flex-direction:column;
+						justify-content:space-between;
+					}
+					.date-div{
+						width:100%;
+					}
+					.mail-div{
+						width:100%;
+						
+					}
+					.avaibility{
+						width:100%;
+					}
+					label{
+						font-size: 21px;
+						color: var(--text-tershary);
+						line-height:42px;
+						font-weight: 700;
+						font-family: "Montserrat";
+					}
+					input{
+						width:100%;
+						box-sizing:border-box;
+						border-radius:20px;
+						font-size: 21px;
+						line-height:31px;
+						color: var(--text-tershary);
+						font-weight: 600;
+						font-family: "Montserrat";
+						text-align: center;
+						padding:30px 30px;
+						background-color:var(--primary);
+						outline:0px;
+						border:1px solid var(--outline);
+					}
+					.submit-btn{
+						margin-top:40px;
+						outline:0px;
+						border:var(--btn-secondary);
+						background:var(--btn-secondary);
+						color:var(--text-quaternary);
+						cursor:pointer;
+					}
+					.banner-2{
+						padding-bottom:100px;
+					}
+					.delicious{
+						font-size: 29px;
+						color: var(--text-quinary);
+						font-weight: 600;
+						font-family: "Montserrat";
+						padding-bottom:25px;
+						text-align:center;
+					}
+					.categories{
+						font-size: 50px;
+						color: var(--text-tershary);
+						font-weight: 900;
+						text-align:center;
+						padding-bottom:85px;
+						font-family: "Playfair Display";
+					}
+					.inner-div{
+						width:100%;
+						box-sizing:border-box;
+						background:var(--tershary);
+						padding:40px 35px;
+						border-radius:30px;
+						text-align:center;
+						box-shadow:-5px 5px 5px 2px var(--shadow);
+						margin-bottom:15px;
+					}			
+					.inner-heading{
+						font-size: 40px;
+						padding:30px 0px 0px 0px;
+						color: var(--text-tershary);
+						font-weight: 900;
+						text-align:center;
+						font-family: "Playfair Display";
+					}
+					.inner-btn{
+						margin:0px auto;
+						border:1px solid var(--btn-primary);
+					}
+					.inner-btn:hover{
+						background-color:var(--primary);
+						color:var(--secondary);
+						border:1px solid var(--secondary);
+					}
+					.img-dish{
+						width:189px;
+						height:189px;
+					}
+					.banner-3{
+						background-image:url(section-5bg.png);
+						background-repeat:no-repeat;
+						background-size:100% 60%;
+						background-position:center 200px;
+						padding-bottom:300px;
+					}
+					.covid-text{
+						color:var(--text-secondary);
+						font-size: 29px;
+						padding-bottom:
+						font-weight: 500;
+						font-family: "Montserrat";
+						text-align:center;
+					}
+					.padding-bottom{
+						padding-bottom:25px;
+					}
+					.btn-tershary{
+						font-size: 21px;
+						width:160px;
+						padding:15px 15px;
+						border-radius:50px;
+						background: var(--btn-secondary);
+						color: var(--text-quaternary);
+						font-weight: 700;
+						font-family: "Montserrat";
+						text-align: center;
+						cursor:pointer;
+						margin:0px auto;
+					}
+					
+					.story-div{
+						width:100%;
+						padding-bottom:155px;
+						margin-left:0px;
+					}
+					.img-div{
+						width:100%;
+						background-image:url(section-6bg.png);
+						background-repeat:no-repeat;
+						background-size:100% 100%;
+						background-position:bottom;
+						padding-bottom:450px;
+						margin-top:-200px;
+						
+					}
+					.story-text{
+						font-size: 29px;
+						color:var(--text-quinary);
+						font-weight: 400;
+						font-family: "Montserrat";
+						padding-top:55px;
+						text-align:center;
+						
+					}
+					.resto{
+						font-size: 40px;
+						color: var(--text-tershary);
+						font-weight: 900;
+						font-family: "Playfair Display";
+						padding-bottom:30px;
+						text-align:center;
+					}
+					.lorem-ipsum{
+						font-size: 17px;
+						color: var(--text-tershary);
+						font-weight: 600;
+						line-height:30px;
+						font-family: "Montserrat";
+						text-align: left;
+						padding-bottom:55px;
+					}
+					.color{
+						background:var(--btn-secondary);
+					}
+					.ingredians-div{
+						width:100%;
+						padding-bottom:80px;
+						margin-right:0px;
+						order:1;
+					}
+					.img-div-2{
+						width:100%;
+						background-image:url(section-7bg.png);
+						background-repeat:no-repeat;
+						background-size:100% 100%;
+						background-position:center;
+						padding-bottom:450px;
+						margin-top:00px;
+						order:2;
+					}
+					.words-form-chef-section{
+						padding-top:50px;
+						padding-bottom:80px;
+					}
+					.words-form-chef{
+						background-color:var(--tershary);
+						padding:0px 10px;
+						border-radius:74px;
+					}
+					.text-div{
+						width:100%;
+					}
+					.chef-img{
+						width:100%;
+					}
+					.chef-text{
+						font-size: 29px;
+						color:var(--text-secondary);
+						font-weight: 600;
+						font-family: "Montserrat";
+						padding-top:50px;
+						text-align:center;
+					}
+					.section-8-img{
+						width:100%;
+						height:450px;
+					}
+					.customer-says-div{
+						padding-bottom:100px;
+					}
+					.inner-one{
+						box-sizing:border-box;
+						width:100%;
+						background:var(--tershary);
+						border-radius: 40px;
+						padding:25px 20px;
+						margin-top:20px;
+						box-shadow: -5px 5px 5px 2px var(--shadow);
+					}
+					.center{
+						margin:20px auto 0px;
+					}
+					.name{
+						font-size: 29px;
+						color: var(--text-tershary);
+						font-weight: 900;
+						padding-bottom:20px;
+						font-family: "Playfair Display";
+					}
+					.customer-response{
+						font-size: 14px;
+						line-height:21px;
+						color:var(--text-tershary);
+						font-weight: 600;
+						text-align:center;
+						font-family: "Montserrat";
+					}
+					.star{
+						margin-top:25px;
+						margin-left:50px;
+					}
+					.inner-date{
+						font-size: 16px;
+						padding-top:15px;
+						color: var(--date);
+						font-weight: 700;
+						font-family: "Montserrat";
+						text-align: center;
+					}
+					.flex-end{
+						align-items:center;
+					}
+					.form-section{
+						
+						background-image:url(section-10bg.png);
+						background-repeat:no-repeat;
+						background-size:92% 100%;
+						background-position:center;
+						padding-bottom:100px;
+					}
+					.form-back-div{
+						width:100%;
+						margin:0px auto;
+					}
+					.input{
+						width:99.5%;
+						box-sizing:border-box;
+						border-radius:50px;
+						font-size: 21px;
+						line-height:31px;
+						color: var(--text-tershary);
+						font-weight: 600;
+						font-family: "Montserrat";
+						text-align: left;
+						padding:30px 60px 30px;
+						background-color:var(--input);
+						outline:0px;
+						border:2px solid var(--text-primary);
+						margin-bottom:30px;
+					}
+					.message-input-box{
+						padding-bottom:140px;
+						margin-bottom:40px;
+					}
+					placeholder{
+						color: var(--text-tershary);
+					}
+					.form-button{
+						font-size: 21px;
+						width:250px;
+						padding:15px 15px;
+						border-radius:50px;
+						background: var(--btn-secondary);
+						color: var(--text-quaternary);
+						font-weight: 700;
+						border:2px solid var(--text-primary);
+						font-family: "Montserrat";
+						text-align: center;
+						cursor:pointer;
+						margin:0px auto;
+					}
+					.form-button:hover{
+						background: var(--text-quaternary);
+					}
+					.button-color{
+						font-size: 21px;
+						color:var(--text-tershary);
+						font-weight: 700;
+						text-decoration:none;
+						font-family: "Montserrat";
+					}
+					.button-color:hover{
+						color: var(--btn-secondary);
+					}
+					footer{
+						padding:50px 0px;
+						background-color:var(--footer-primary);
+					}
+					.about{
+						width:50%;
+					}
+					.what-we-do{
+						width:50%;
+					}
+					.news-letter{
+						width:100%;
+						text-align:left;
+					}
+					.links{
+						color:var(--text-tershary);
+						font-size: 22px;
+						line-height: 40px;
+						font-weight: 700;
+						font-family: "Montserrat"
+					}
+					.heading{
+						font-size: 30px;
+						padding-top:15px;
+						color: var(--text-primary);
+						font-weight: 900;
+						font-family: "Playfair Display";
+						padding-bottom:10px;
+					}
+					.footer-input{
+						background:var(--footer-primary);
+						border-radius:50px;
+						padding:20px 0px;
+						border:2px solid var(--secondary);
+						margin-bottom:60px;
+						width:70%;
+					}
+					.social-media{
+						width:400px;
+						display: flex;
+						justify-content: space-around;
+					}
+					.facebook-img{
+						background-color: white;
+						width: 50px;
+						height: 50px;
+						border-radius: 50%;
+						background-image: url(https://cdn3.iconfinder.com/data/icons/picons-social/57/06-facebook-512.png);
+						background-repeat: no-repeat;
+						background-size: 40px 40px;
+						background-position: center center;
+					}
+					.facebook-img:hover{
+						background-image: url(https://cdn2.iconfinder.com/data/icons/social-media-and-payment/64/-04-512.png);
+						background-repeat: no-repeat;
+						background-size: 40px 40px;
+					}
+					.instagram-img{
+						background-color: white;
+						width: 50px;
+						height: 50px;
+						border-radius: 50%;
+						background-image: url(https://cdn4.iconfinder.com/data/icons/picons-social/57/38-instagram-2-512.png);
+						background-repeat: no-repeat;
+						background-size: 40px 40px;
+						background-position: center center;
+					}
+					.instagram-img:hover{
+						background-image: url(https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Instagram-512.png);
+						background-repeat: no-repeat;
+						background-size: 30px 30px;
+					}
+					.you-tube-img{
+						background-color: white;
+						width: 50px;
+						height: 50px;
+						border-radius: 50%;
+						background-image: url(https://cdn3.iconfinder.com/data/icons/font-awesome-brands/576/youtube-512.png);
+						background-repeat: no-repeat;
+						background-size: 40px 40px;
+						background-position: center center;
+					}
+					.you-tube-img:hover{
+						background-image: url(https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/395_Youtube_logo-512.png);
+						background-repeat: no-repeat;
+						background-size: 30px 30px;
+					}
+			}
+			
+			@media  screen and (min-width:768px){
+					section{
+						background-color:var(--primary);
+					}
+					header{
+						background-color:var(--primary);
+						padding:25px 0px 0px 0px;
+					}
+					.container{
+						box-sizing:border-box;
+						padding:0px 15px;
+						max-width:1328px;
+						width:100%;
+						margin:0px auto;
+						
+					}
+					.toolbar{
+						box-sizing:border-box;
+						width:100%;
+						padding:10px 45px;
+						color:var(--text-primary);
+						background:var(--secondary);
+						display:flex;
+						justify-content:space-between;
+						align-items:center;
+						border-radius:100px;
+					}
+					.logo{
+						width:15%;
+						font-size:1.5em;
+						font-weight:700;
+					}
+					.nev{
+						width:40%;
+						font-size: 17px;
+						font-family: "Montserrat";
+						text-align:center;
+						display:none;
+					}
+					.humberger{
+						display:block;				
+					}
+					.li-anchor{
+						color:var(--text-primary);
+						text-decoration:none;
+					}
+					.flex{
+						display:flex;
+						flex-wrap:wrap;
+						flex-direction:row;
+					}
+					.align-item{
+						align-items:center;
+					}
+					.space-between{
+						justify-content:space-between;
+					}
+					.sign-up{
+						width:10%;
+						font-size: 17px;
+						color:var(--text-secondary);
+						font-family: "Montserrat";
+						text-align:center;
+						display:none;
+					}
+					.sign-anchor{
+						color:var(--text-secondary);
+						text-decoration:none;
+					}
+					.banner-1{
+						background-image:url(banner-1-lamp.jpg);
+						background-repeat:no-repeat;
+						background-size:100% 40%;
+						background-position:-43px 300px;
+						padding:50px 0px 100px 0px;
+					}
+					.eat-drink-text{
+						font-size: 54px;
+						color: var(--text-tershary);
+						font-weight: 900;
+						font-family: "Playfair Display";
+					}
+					.block{
+						display:inline;
+					}
+					.sub-text{
+						font-size: 29px;
+						color: var(--text-tershary);
+						font-weight: 500;
+						font-family: "Montserrat";
+						padding-top:32px;
+					}
+					.discription{
+						font-size: 16px;
+						line-height:26px;
+						color: var(--text-tershary);
+						font-weight: 600;
+						font-family: "Montserrat";
+						padding:25px 0px 40px 0px;
+					}
+					.btn-primary{
+						font-size: 21px;
+						width:160px;
+						padding:15px 0px;
+						border-radius:50px;
+						color: var(--text-quaternary);
+						font-weight: 700;
+						font-family: "Montserrat";
+						text-align: center;
+						background:var(--btn-primary);
+						cursor:pointer;
+						margin:0px;	
+					}
+					.see-menu-text{
+						font-size: 21px;
+						color: var(--text-tershary);
+						font-weight: 700;
+						font-family: "Montserrat";
+					}
+					.see-menu-text .anchor{
+						color: var(--text-tershary);
+						text-decoration:none;
+					}
+					.width{
+						width:100%;
+						justify-content:space-between;
+						padding-bottom:255px;
+					}
+					.book-table{
+						font-size: 21px;
+						color: var(--text-tershary);
+						font-weight: 700;
+						font-family: "Montserrat";
+						margin-right:15px;
+						padding-bottom:10px;
+						margin-top:40px;
+						margin-left:20px;
+					}
+					.arrow-1{
+						width:30px;
+						padding-bottom:50px;
+						height:10px;
+						display:none;
+					}
+					.table-back-div{
+						box-sizing:border-box;
+						width:100%;
+						padding:20px 30px 25px;
+						background:var(--tershary);
+						border-radius:30px;
+						display:flex;
+						flex-direction:column;
+						justify-content:space-between;
+					}
+					.appt{
+						width:100%;
+						display:flex;
+						flex-wrap:wrap;
+						flex-direction:row;
+						justify-content:space-between;
+					}
+					.date-div{
+						width:49%;
+					}
+					.mail-div{
+						width:49%;
+						margin:0px auto;
+						
+					}
+					.avaibility{
+						width:49%;
+						margin:0px auto;
+					}
+					label{
+						font-size: 21px;
+						color: var(--text-tershary);
+						line-height:42px;
+						font-weight: 700;
+						font-family: "Montserrat";
+					}
+					input{
+						width:100%;
+						box-sizing:border-box;
+						border-radius:20px;
+						font-size: 21px;
+						line-height:31px;
+						color: var(--text-tershary);
+						font-weight: 600;
+						font-family: "Montserrat";
+						text-align: center;
+						padding:30px 30px;
+						background-color:var(--primary);
+						outline:0px;
+						border:1px solid var(--outline);
+					}
+					.submit-btn{
+						margin-top:40px;
+						outline:0px;
+						border:var(--btn-secondary);
+						background:var(--btn-secondary);
+						color:var(--text-quaternary);
+						cursor:pointer;
+					}
+					.banner-2{
+						padding-bottom:100px;
+					}
+					.delicious{
+						font-size: 29px;
+						color: var(--text-quinary);
+						font-weight: 600;
+						font-family: "Montserrat";
+						padding-bottom:25px;
+						text-align:center;
+					}
+					.categories{
+						font-size: 50px;
+						color: var(--text-tershary);
+						font-weight: 900;
+						text-align:center;
+						padding-bottom:85px;
+						font-family: "Playfair Display";
+					}
+					.inner-div{
+						width:48%;
+						box-sizing:border-box;
+						background:var(--tershary);
+						padding:40px 35px;
+						border-radius:30px;
+						text-align:center;
+						box-shadow:-5px 5px 5px 2px var(--shadow);
+						margin:15px auto 0px;
+					}			
+					.inner-heading{
+						font-size: 40px;
+						padding:30px 0px 0px 0px;
+						color: var(--text-tershary);
+						font-weight: 900;
+						text-align:center;
+						font-family: "Playfair Display";
+					}
+					.inner-btn{
+						margin:0px auto;
+						border:1px solid var(--btn-primary);
+					}
+					.inner-btn:hover{
+						background-color:var(--primary);
+						color:var(--secondary);
+						border:1px solid var(--secondary);
+					}
+					.img-dish{
+						width:189px;
+						height:189px;
+					}
+					.banner-3{
+						background-image:url(section-5bg.png);
+						background-repeat:no-repeat;
+						background-size:100% 60%;
+						background-position:center 200px;
+						padding-bottom:400px;
+					}
+					.covid-text{
+						color:var(--text-secondary);
+						font-size: 29px;
+						padding-bottom:
+						font-weight: 500;
+						font-family: "Montserrat";
+						text-align:center;
+					}
+					.padding-bottom{
+						padding-bottom:25px;
+					}
+					.btn-tershary{
+						font-size: 21px;
+						width:160px;
+						padding:15px 15px;
+						border-radius:50px;
+						background: var(--btn-secondary);
+						color: var(--text-quaternary);
+						font-weight: 700;
+						font-family: "Montserrat";
+						text-align: center;
+						cursor:pointer;
+						margin:0px auto;
+					}
+					
+					.story-div{
+						width:45%;
+						padding-bottom:70px;
+						margin-left:0px;
+					}
+					.img-div{
+						width:50%;
+						background-image:url(section-6bg.png);
+						background-repeat:no-repeat;
+						background-size:100% 70%;
+						background-position:bottom;
+						padding-bottom:450px;
+						margin-top:-200px;
+						
+					}
+					.story-text{
+						font-size: 29px;
+						color:var(--text-quinary);
+						font-weight: 400;
+						font-family: "Montserrat";
+						padding-top:55px;
+						text-align:left;
+						
+					}
+					.resto{
+						font-size: 40px;
+						color: var(--text-tershary);
+						font-weight: 900;
+						font-family: "Playfair Display";
+						padding-bottom:30px;
+						text-align:left;
+					}
+					.lorem-ipsum{
+						font-size: 17px;
+						color: var(--text-tershary);
+						font-weight: 600;
+						line-height:30px;
+						font-family: "Montserrat";
+						text-align: left;
+						padding-bottom:55px;
+					}
+					.color{
+						background:var(--btn-secondary);
+					}
+					.ingredians-div{
+						width:49%;
+						padding-bottom:80px;
+						margin-right:0px;
+						order:2;
+					}
+					.img-div-2{
+						width:50%;
+						background-image:url(section-7bg.png);
+						background-repeat:no-repeat;
+						background-size:100% 70%;
+						background-position:center;
+						padding-bottom:450px;
+						margin-top:00px;
+						order:1;
+					}
+					.words-form-chef-section{
+						padding-top:50px;
+						padding-bottom:80px;
+					}
+					.words-form-chef{
+						background-color:var(--tershary);
+						padding:20px 10px;
+						border-radius:30px;
+					}
+					.text-div{
+						width:45%;
+					}
+					.chef-img{
+						width:50%;
+					}
+					.chef-text{
+						font-size: 29px;
+						color:var(--text-secondary);
+						font-weight: 600;
+						font-family: "Montserrat";
+						padding-top:50px;
+						text-align:left;
+					}
+					.section-8-img{
+						width:100%;
+						height:450px;
+					}
+					.customer-says-div{
+						padding-bottom:100px;
+					}
+					.inner-one{
+						box-sizing:border-box;
+						width:49%;
+						background:var(--tershary);
+						border-radius: 40px;
+						padding:25px 20px;
+						margin-top:20px;
+						box-shadow: -5px 5px 5px 2px var(--shadow);
+					}
+					.center{
+						margin:20px auto 0px;
+					}
+					.customer-image{
+						margin:0px auto;
+					}
+					.name{
+						font-size: 29px;
+						color: var(--text-tershary);
+						font-weight: 900;
+						padding-bottom:20px;
+						font-family: "Playfair Display";
+					}
+					.customer-response{
+						font-size: 14px;
+						line-height:21px;
+						color:var(--text-tershary);
+						font-weight: 600;
+						text-align:center;
+						font-family: "Montserrat";
+					}
+					.star{
+						margin-top:25px;
+						margin-left:50px;
+					}
+					.inner-date{
+						font-size: 16px;
+						padding-top:15px;
+						color: var(--date);
+						font-weight: 700;
+						font-family: "Montserrat";
+						text-align: center;
+					}
+					.flex-end{
+						align-items:center;
+						flex-direction:column;
+					}
+					.form-section{
+						
+						background-image:url(section-10bg.png);
+						background-repeat:no-repeat;
+						background-size:92% 100%;
+						background-position:center;
+						padding-bottom:100px;
+					}
+					.form-back-div{
+						width:100%;
+						margin:0px auto;
+					}
+					.input{
+						width:99.5%;
+						box-sizing:border-box;
+						border-radius:50px;
+						font-size: 21px;
+						line-height:31px;
+						color: var(--text-tershary);
+						font-weight: 600;
+						font-family: "Montserrat";
+						text-align: left;
+						padding:30px 60px 30px;
+						background-color:var(--input);
+						outline:0px;
+						border:2px solid var(--text-primary);
+						margin-bottom:30px;
+					}
+					.message-input-box{
+						padding-bottom:140px;
+						margin-bottom:40px;
+					}
+					placeholder{
+						color: var(--text-tershary);
+					}
+					.form-button{
+						font-size: 21px;
+						width:250px;
+						padding:15px 15px;
+						border-radius:50px;
+						background: var(--btn-secondary);
+						color: var(--text-quaternary);
+						font-weight: 700;
+						border:2px solid var(--text-primary);
+						font-family: "Montserrat";
+						text-align: center;
+						cursor:pointer;
+						margin:0px auto;
+					}
+					.form-button:hover{
+						background: var(--text-quaternary);
+					}
+					.button-color{
+						font-size: 21px;
+						color:var(--text-tershary);
+						font-weight: 700;
+						text-decoration:none;
+						font-family: "Montserrat";
+					}
+					.button-color:hover{
+						color: var(--btn-secondary);
+					}
+					footer{
+						padding:50px 0px;
+						background-color:var(--footer-primary);
+					}
+					.about{
+						width:25%;
+					}
+					.what-we-do{
+						width:30%;
+					}
+					.news-letter{
+						width:45%;
+						text-align:right;
+					}
+					.links{
+						color:var(--text-tershary);
+						font-size: 16px;
+						line-height: 40px;
+						font-weight: 700;
+						font-family: "Montserrat"
+					}
+					.heading{
+						font-size: 26px;
+						padding-top:15px;
+						color: var(--text-primary);
+						font-weight: 900;
+						font-family: "Playfair Display";
+						padding-bottom:10px;
+					}
+					.footer-input{
+						background:var(--footer-primary);
+						border-radius:50px;
+						padding:20px 0px;
+						border:2px solid var(--secondary);
+						margin-bottom:60px;
+					}
+					.social-media{
+						width:400px;
+						display: flex;
+						justify-content: space-around;
+					}
+					.facebook-img{
+						background-color: white;
+						width: 50px;
+						height: 50px;
+						border-radius: 50%;
+						background-image: url(https://cdn3.iconfinder.com/data/icons/picons-social/57/06-facebook-512.png);
+						background-repeat: no-repeat;
+						background-size: 40px 40px;
+						background-position: center center;
+					}
+					.facebook-img:hover{
+						background-image: url(https://cdn2.iconfinder.com/data/icons/social-media-and-payment/64/-04-512.png);
+						background-repeat: no-repeat;
+						background-size: 40px 40px;
+					}
+					.instagram-img{
+						background-color: white;
+						width: 50px;
+						height: 50px;
+						border-radius: 50%;
+						background-image: url(https://cdn4.iconfinder.com/data/icons/picons-social/57/38-instagram-2-512.png);
+						background-repeat: no-repeat;
+						background-size: 40px 40px;
+						background-position: center center;
+					}
+					.instagram-img:hover{
+						background-image: url(https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Instagram-512.png);
+						background-repeat: no-repeat;
+						background-size: 30px 30px;
+					}
+					.you-tube-img{
+						background-color: white;
+						width: 50px;
+						height: 50px;
+						border-radius: 50%;
+						background-image: url(https://cdn3.iconfinder.com/data/icons/font-awesome-brands/576/youtube-512.png);
+						background-repeat: no-repeat;
+						background-size: 40px 40px;
+						background-position: center center;
+					}
+					.you-tube-img:hover{
+						background-image: url(https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/395_Youtube_logo-512.png);
+						background-repeat: no-repeat;
+						background-size: 30px 30px;
+					}
+			}
+			
+			
+			@media only screen and (min-width:1024px){
+				section{
+					background-color:var(--primary);
+				}
+				header{
+					background-color:var(--primary);
+					padding:95px 0px 0px 0px;
+				}
+				.container{
+					box-sizing:border-box;
+					padding:0px 15px;
+					max-width:1328px;
+					width:100%;
+					margin:0px auto;
+					
+				}
+				.toolbar{
+					box-sizing:border-box;
+					width:100%;
+					padding:25px 65px 25px 70px;
+					color:var(--text-primary);
+					background:var(--secondary);
+					display:flex;
+					justify-content:space-between;
+					align-items:center;
+					border-radius:100px;
+				}
+				.logo{
+					width:15%;
+					font-size:1.5em;
+					font-weight:700;
+				}
+				.nev{
+					width:40%;
+					font-size: 17px;
+					font-family: "Montserrat";
+					text-align:center;
+					display:block;
+				}
+				.humberger{
+					display:none;				
+				}
+				.li-anchor{
+					color:var(--text-primary);
+					text-decoration:none;
+				}
+				.flex{
+					display:flex;
+					flex-direction:row;
+					flex-wrap:wrap;
+				}
+				.align-item{
+					align-items:center;
+				}
+				.space-between{
+					justify-content:space-between;
+				}
+				.sign-up{
+					width:10%;
+					font-size: 17px;
+					color:var(--text-secondary);
+					font-family: "Montserrat";
+					text-align:center;
+					display:block;
+				}
+				.sign-anchor{
+					color:var(--text-secondary);
+					text-decoration:none;
+				}
+				.banner-1{
+					background-image:url(banner-1-lamp.jpg);
+					background-repeat:no-repeat;
+					background-size:100% 100%;
+					background-position: top;
+					padding:128px 0px 155px 0px;
+				}
+				.eat-drink-text{
+					font-size: 81px;
+					color: var(--text-tershary);
+					font-weight: 900;
+					font-family: "Playfair Display";
+				}
+				.block{
+					display:block;
+				}
+				.sub-text{
+					font-size: 29px;
+					color: var(--text-tershary);
+					font-weight: 500;
+					font-family: "Montserrat";
+					padding-top:32px;
+				}
+				.discription{
+					font-size: 17px;
+					line-height:26px;
+					color: var(--text-tershary);
+					font-weight: 600;
+					font-family: "Montserrat";
+					padding:25px 0px 40px 0px;
+				}
+				.btn-primary{
+					font-size: 21px;
+					width:160px;
+					padding:15px 0px;
+					border-radius:50px;
+					color: var(--text-quaternary);
+					font-weight: 700;
+					font-family: "Montserrat";
+					text-align: center;
+					background:var(--btn-primary);
+					cursor:pointer;
+				}
+				.see-menu-text{
+					font-size: 21px;
+					color: var(--text-tershary);
+					font-weight: 700;
+					font-family: "Montserrat";
+				}
+				.see-menu-text .anchor{
+					color: var(--text-tershary);
+					text-decoration:none;
+				}
+				.width{
+					width:310px;
+					justify-content:space-between;
+					padding-bottom:255px;
+				}
+				.book-table{
+					font-size: 21px;
+					color: var(--text-tershary);
+					font-weight: 700;
+					font-family: "Montserrat";
+					margin-right:15px;
+					padding-bottom:50px;
+					margin-top:0px;
+				}
+				.arrow-1{
+					width:30px;
+					padding-bottom:50px;
+					height:10px;
+					display:block;
+				}
+				.table-back-div{
+					box-sizing:border-box;
+					width:100%;
+					padding:20px 20px 45px;
+					background:var(--tershary);
+					border-radius:30px;
+					display:flex;
+					flex-direction:row;
+					justify-content:space-between;
+				}
+				.appt{
+					width:70%;
+					display:flex;
+					justify-content:space-between;
+				}
+				.date-div{
+					width:28%;
+				}
+				.mail-div{
+					width:36%;
+					margin:0px;
+				}
+				.avaibility{
+					width:25%;
+				}
+				label{
+					font-size: 21px;
+					color: var(--text-tershary);
+					line-height:42px;
+					font-weight: 700;
+					font-family: "Montserrat";
+				}
+				input{
+					width:99.5%;
+					box-sizing:border-box;
+					border-radius:20px;
+					font-size: 21px;
+					line-height:31px;
+					color: var(--text-tershary);
+					font-weight: 600;
+					font-family: "Montserrat";
+					text-align: center;
+					padding:30px 30px;
+					background-color:var(--primary);
+					outline:0px;
+					border:1px solid var(--outline);
+				}
+				.submit-btn{
+					margin-top:40px;
+					outline:0px;
+					border:var(--btn-secondary);
+					background:var(--btn-secondary);
+					color:var(--text-quaternary);
+					cursor:pointer;
+				}
+				.banner-2{
+					padding-bottom:220px;
+				}
+				.delicious{
+					font-size: 29px;
+					color: var(--text-quinary);
+					font-weight: 600;
+					font-family: "Montserrat";
+					padding-bottom:25px;
+					text-align:center;
+				}
+				.categories{
+					font-size: 50px;
+					color: var(--text-tershary);
+					font-weight: 900;
+					text-align:center;
+					padding-bottom:85px;
+					font-family: "Playfair Display";
+				}
+				.inner-div{
+					width:30%;
+					box-sizing:border-box;
+					background:var(--tershary);
+					padding:40px 35px;
+					border-radius:30px;
+					text-align:center;
+					box-shadow:-5px 5px 5px 2px var(--shadow);
+				}			
+				.inner-heading{
+					font-size: 40px;
+					padding:30px 0px 0px 0px;
+					color: var(--text-tershary);
+					font-weight: 900;
+					text-align:center;
+					font-family: "Playfair Display";
+				}
+				.inner-btn{
+					margin:0px auto;
+					border:1px solid var(--btn-primary);
+				}
+				.inner-btn:hover{
+					background-color:var(--primary);
+					color:var(--secondary);
+					border:1px solid var(--secondary);
+				}
+				.img-dish{
+					width:189px;
+					height:189px;
+				}
+				.banner-3{
+					background-image:url(section-5bg.png);
+					background-repeat:no-repeat;
+					background-size:100% 100%;
+					background-position:top;
+					padding-bottom:630px;
+				}
+				.covid-text{
+					color:var(--text-secondary);
+					font-size: 29px;
+					padding-bottom:
+					font-weight: 500;
+					font-family: "Montserrat";
+					text-align:center;
+				}
+				.padding-bottom{
+					padding-bottom:25px;
+				}
+				.btn-tershary{
+					font-size: 21px;
+					width:160px;
+					padding:15px 15px;
+					border-radius:50px;
+					background: var(--btn-secondary);
+					color: var(--text-quaternary);
+					font-weight: 700;
+					font-family: "Montserrat";
+					text-align: center;
+					cursor:pointer;
+					margin:0px auto;
+				}
+				
+				.story-div{
+					width:30%;
+					padding-bottom:155px;
+					margin-left:80px;
+				}
+				.img-div{
+					width:50%;
+					background-image:url(section-6bg.png);
+					background-repeat:no-repeat;
+					background-size:100% 80%;
+					background-position:bottom;
+					
+				}
+				.story-text{
+					font-size: 29px;
+					color:var(--text-quinary);
+					font-weight: 400;
+					font-family: "Montserrat";
+					padding-top:255px;
+					
+					
+				}
+				.resto{
+					font-size: 47px;
+					color: var(--text-tershary);
+					font-weight: 900;
+					font-family: "Playfair Display";
+					padding-bottom:30px;
+				}
+				.lorem-ipsum{
+					font-size: 17px;
+					color: var(--text-tershary);
+					font-weight: 600;
+					line-height:30px;
+					font-family: "Montserrat";
+					text-align: left;
+					padding-bottom:55px;
+				}
+				.color{
+					background:var(--btn-secondary);
+				}
+				.ingredians-div{
+					width:30%;
+					padding-bottom:155px;
+					margin-right:80px;
+				}
+				.img-div-2{
+					width:50%;
+					background-image:url(section-7bg.png);
+					background-repeat:no-repeat;
+					background-size:100% 80%;
+					background-position:center;
+				}
+				.words-form-chef-section{
+					padding-top:110px;
+					padding-bottom:140px;
+				}
+				.words-form-chef{
+					background-color:var(--tershary);
+					padding:20px 75px;
+					border-radius:74px;
+				}
+				
+				.text-div{
+					width:35%;
+				}
+				.chef-img{
+					width:59%;
+				}
+				.chef-text{
+					font-size: 29px;
+					color:var(--text-secondary);
+					font-weight: 600;
+					font-family: "Montserrat";
+				}
+				.section-8-img{
+					width:100%;
+					height:100%;
+				}
+				.customer-says-div{
+					padding-bottom:100px;
+				}
+				.inner-one{
+					box-sizing:border-box;
+					width:43%;
+					background:var(--tershary);
+					border-radius: 40px;
+					padding:45px 20px 45px 25px;
+					box-shadow: -5px 5px 5px 2px var(--shadow);
+				}
+				.center{
+					margin:50px auto 0px;
+				}
+				.name{
+					font-size: 29px;
+					color: var(--text-tershary);
+					font-weight: 900;
+					padding-bottom:10px;
+					font-family: "Playfair Display";
+				}
+				.customer-image{
+					margin:0px;
+					width:130px;
+					height:130px;
+				}
+				.customer-response{
+					width:240px;
+					font-size: 14px;
+					line-height:21px;
+					color:var(--text-tershary);
+					font-weight: 600;
+					text-align:left;
+					font-family: "Montserrat";
+				}
+				.star{
+					margin-top:25px;
+					margin-left:0px;
+				}
+				.inner-date{
+					font-size: 14px;
+					color: var(--date);
+					font-weight: 700;
+					font-family: "Montserrat";
+					text-align: right;
+				}
+				.flex-end{
+					align-items:flex-end;
+				}
+				.form-section{
+					
+					background-image:url(section-10bg.png);
+					background-repeat:no-repeat;
+					background-size:92% 100%;
+					background-position:center;
+					padding-bottom:100px;
+				}
+				.form-back-div{
+					width:885px;
+					margin:0px auto;
+				}
+				.input{
+					width:99.5%;
+					box-sizing:border-box;
+					border-radius:50px;
+					font-size: 21px;
+					line-height:31px;
+					color: var(--text-tershary);
+					font-weight: 600;
+					font-family: "Montserrat";
+					text-align: left;
+					padding:30px 60px 30px;
+					background-color:var(--input);
+					outline:0px;
+					border:2px solid var(--text-primary);
+					margin-bottom:30px;
+				}
+				.message-input-box{
+					padding-bottom:140px;
+					margin-bottom:40px;
+				}
+				placeholder{
+					color: var(--text-tershary);
+				}
+				.form-button{
+					font-size: 21px;
+					width:250px;
+					padding:15px 15px;
+					border-radius:50px;
+					background: var(--btn-secondary);
+					color: var(--text-quaternary);
+					font-weight: 700;
+					border:2px solid var(--text-primary);
+					font-family: "Montserrat";
+					text-align: center;
+					cursor:pointer;
+					margin:0px auto;
+				}
+				.form-button:hover{
+					background: var(--text-quaternary);
+				}
+				.button-color{
+					font-size: 21px;
+					color:var(--text-tershary);
+					font-weight: 700;
+					text-decoration:none;
+					font-family: "Montserrat";
+				}
+				.button-color:hover{
+					color: var(--btn-secondary);
+				}
+				footer{
+					padding:155px 0px;
+					background-color:var(--footer-primary);
+				}
+				.about{
+					width:25%;
+				}
+				.what-we-do{
+					width:35%;
+				}
+				.news-letter{
+					width:40%;
+					text-align:right;
+				}
+				.links{
+					color:var(--text-tershary);
+					font-size: 22px;
+					line-height: 67px;
+					font-weight: 700;
+					font-family: "Montserrat"
+				}
+				.heading{
+					font-size: 42px;
+					color: var(--text-primary);
+					font-weight: 900;
+					font-family: "Playfair Display";
+					padding-bottom:40px;
+				}
+				.footer-input{
+					background:var(--footer-primary);
+					border-radius:50px;
+					padding:20px 0px;
+					border:2px solid var(--secondary);
+					margin-bottom:60px;
+					width:100%;
+				}
+				.social-media{
+					width: 320px;
+					display: flex;
+					justify-content: space-between;
+				}
+				.facebook-img{
+					background-color: white;
+					width: 50px;
+					height: 50px;
+					border-radius: 50%;
+					background-image: url(https://cdn3.iconfinder.com/data/icons/picons-social/57/06-facebook-512.png);
+					background-repeat: no-repeat;
+					background-size: 40px 40px;
+					background-position: center center;
+				}
+				.facebook-img:hover{
+					background-image: url(https://cdn2.iconfinder.com/data/icons/social-media-and-payment/64/-04-512.png);
+					background-repeat: no-repeat;
+					background-size: 40px 40px;
+				}
+				.instagram-img{
+					background-color: white;
+					width: 50px;
+					height: 50px;
+					border-radius: 50%;
+					background-image: url(https://cdn4.iconfinder.com/data/icons/picons-social/57/38-instagram-2-512.png);
+					background-repeat: no-repeat;
+					background-size: 40px 40px;
+					background-position: center center;
+				}
+				.instagram-img:hover{
+					background-image: url(https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Instagram-512.png);
+					background-repeat: no-repeat;
+					background-size: 30px 30px;
+				}
+				.you-tube-img{
+					background-color: white;
+					width: 50px;
+					height: 50px;
+					border-radius: 50%;
+					background-image: url(https://cdn3.iconfinder.com/data/icons/font-awesome-brands/576/youtube-512.png);
+					background-repeat: no-repeat;
+					background-size: 40px 40px;
+					background-position: center center;
+				}
+				.you-tube-img:hover{
+					background-image: url(https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/395_Youtube_logo-512.png);
+					background-repeat: no-repeat;
+					background-size: 30px 30px;
+				}
+				
+			}
+			
+			
+			@media only screen and (min-width:1280px){
+				section{
+					background-color:var(--primary);
+				}
+				header{
+					background-color:var(--primary);
+					padding:95px 0px 0px 0px;
+				}
+				.container{
+					box-sizing:border-box;
+					padding:0px 15px;
+					max-width:1328px;
+					width:100%;
+					margin:0px auto;
+					
+				}
+				.toolbar{
+					box-sizing:border-box;
+					width:100%;
+					padding:25px 65px 25px 70px;
+					color:var(--text-primary);
+					background:var(--secondary);
+					display:flex;
+					justify-content:space-between;
+					align-items:center;
+					border-radius:100px;
+				}
+				.logo{
+					width:15%;
+					font-size:1.5em;
+					font-weight:700;
+				}
+				.nev{
+					width:40%;
+					font-size: 17px;
+					font-family: "Montserrat";
+					text-align:center;
+					display:block;
+				}
+				.humberger{
+					display:none;				
+				}
+				.li-anchor{
+					color:var(--text-primary);
+					text-decoration:none;
+				}
+				.flex{
+					display:flex;
+					flex-direction:row;
+					flex-wrap:wrap;
+				}
+				.align-item{
+					align-items:center;
+				}
+				.space-between{
+					justify-content:space-between;
+				}
+				.sign-up{
+					width:10%;
+					font-size: 17px;
+					color:var(--text-secondary);
+					font-family: "Montserrat";
+					text-align:center;
+					display:block;
+				}
+				.sign-anchor{
+					color:var(--text-secondary);
+					text-decoration:none;
+				}
+				.banner-1{
+					background-image:url(banner-1-lamp.jpg);
+					background-repeat:no-repeat;
+					background-size:100% 100%;
+					background-position: top;
+					padding:128px 0px 155px 0px;
+				}
+				.eat-drink-text{
+					font-size: 81px;
+					color: var(--text-tershary);
+					font-weight: 900;
+					font-family: "Playfair Display";
+				}
+				.block{
+					display:block;
+				}
+				.sub-text{
+					font-size: 29px;
+					color: var(--text-tershary);
+					font-weight: 500;
+					font-family: "Montserrat";
+					padding-top:32px;
+				}
+				.discription{
+					font-size: 17px;
+					line-height:26px;
+					color: var(--text-tershary);
+					font-weight: 600;
+					font-family: "Montserrat";
+					padding:25px 0px 40px 0px;
+				}
+				.btn-primary{
+					font-size: 21px;
+					width:160px;
+					padding:15px 0px;
+					border-radius:50px;
+					color: var(--text-quaternary);
+					font-weight: 700;
+					font-family: "Montserrat";
+					text-align: center;
+					background:var(--btn-primary);
+					cursor:pointer;
+				}
+				.see-menu-text{
+					font-size: 21px;
+					color: var(--text-tershary);
+					font-weight: 700;
+					font-family: "Montserrat";
+				}
+				.see-menu-text .anchor{
+					color: var(--text-tershary);
+					text-decoration:none;
+				}
+				.width{
+					width:310px;
+					justify-content:space-between;
+					padding-bottom:255px;
+				}
+				.book-table{
+					font-size: 21px;
+					color: var(--text-tershary);
+					font-weight: 700;
+					font-family: "Montserrat";
+					margin-right:15px;
+					padding-bottom:50px;
+					margin-top:0px;
+				}
+				.arrow-1{
+					width:30px;
+					padding-bottom:50px;
+					height:10px;
+					display:block;
+				}
+				.table-back-div{
+					box-sizing:border-box;
+					width:100%;
+					padding:20px 55px 45px;
+					background:var(--tershary);
+					border-radius:30px;
+					display:flex;
+					flex-direction:row;
+					justify-content:space-between;
+				}
+				.appt{
+					width:70%;
+					display:flex;
+					justify-content:space-between;
+				}
+				.date-div{
+					width:28%;
+				}
+				.mail-div{
+					width:36%;
+					margin:0px;
+				}
+				.avaibility{
+					width:25%;
+				}
+				label{
+					font-size: 21px;
+					color: var(--text-tershary);
+					line-height:42px;
+					font-weight: 700;
+					font-family: "Montserrat";
+				}
+				input{
+					width:99.5%;
+					box-sizing:border-box;
+					border-radius:20px;
+					font-size: 21px;
+					line-height:31px;
+					color: var(--text-tershary);
+					font-weight: 600;
+					font-family: "Montserrat";
+					text-align: center;
+					padding:30px 30px;
+					background-color:var(--primary);
+					outline:0px;
+					border:1px solid var(--outline);
+				}
+				.submit-btn{
+					margin-top:40px;
+					outline:0px;
+					border:var(--btn-secondary);
+					background:var(--btn-secondary);
+					color:var(--text-quaternary);
+					cursor:pointer;
+				}
+				.banner-2{
+					padding-bottom:220px;
+				}
+				.delicious{
+					font-size: 29px;
+					color: var(--text-quinary);
+					font-weight: 600;
+					font-family: "Montserrat";
+					padding-bottom:25px;
+					text-align:center;
+				}
+				.categories{
+					font-size: 50px;
+					color: var(--text-tershary);
+					font-weight: 900;
+					text-align:center;
+					padding-bottom:85px;
+					font-family: "Playfair Display";
+				}
+				.inner-div{
+					width:30%;
+					box-sizing:border-box;
+					background:var(--tershary);
+					padding:40px 35px;
+					border-radius:30px;
+					text-align:center;
+					box-shadow:-5px 5px 5px 2px var(--shadow);
+				}			
+				.inner-heading{
+					font-size: 40px;
+					padding:30px 0px 0px 0px;
+					color: var(--text-tershary);
+					font-weight: 900;
+					text-align:center;
+					font-family: "Playfair Display";
+				}
+				.inner-btn{
+					margin:0px auto;
+					border:1px solid var(--btn-primary);
+				}
+				.inner-btn:hover{
+					background-color:var(--primary);
+					color:var(--secondary);
+					border:1px solid var(--secondary);
+				}
+				.img-dish{
+					width:189px;
+					height:189px;
+				}
+				.banner-3{
+					background-image:url(section-5bg.png);
+					background-repeat:no-repeat;
+					background-size:100% 100%;
+					background-position:top;
+					padding-bottom:630px;
+				}
+				.covid-text{
+					color:var(--text-secondary);
+					font-size: 29px;
+					padding-bottom:
+					font-weight: 500;
+					font-family: "Montserrat";
+					text-align:center;
+				}
+				.padding-bottom{
+					padding-bottom:25px;
+				}
+				.btn-tershary{
+					font-size: 21px;
+					width:160px;
+					padding:15px 15px;
+					border-radius:50px;
+					background: var(--btn-secondary);
+					color: var(--text-quaternary);
+					font-weight: 700;
+					font-family: "Montserrat";
+					text-align: center;
+					cursor:pointer;
+					margin:0px auto;
+				}
+				
+				.story-div{
+					width:30%;
+					padding-bottom:155px;
+					margin-left:80px;
+				}
+				.img-div{
+					width:50%;
+					background-image:url(section-6bg.png);
+					background-repeat:no-repeat;
+					background-size:100% 80%;
+					background-position:bottom;
+					
+				}
+				.story-text{
+					font-size: 29px;
+					color:var(--text-quinary);
+					font-weight: 400;
+					font-family: "Montserrat";
+					padding-top:255px;
+					
+					
+				}
+				.resto{
+					font-size: 47px;
+					color: var(--text-tershary);
+					font-weight: 900;
+					font-family: "Playfair Display";
+					padding-bottom:30px;
+				}
+				.lorem-ipsum{
+					font-size: 17px;
+					color: var(--text-tershary);
+					font-weight: 600;
+					line-height:30px;
+					font-family: "Montserrat";
+					text-align: left;
+					padding-bottom:55px;
+				}
+				.color{
+					background:var(--btn-secondary);
+				}
+				.ingredians-div{
+					width:30%;
+					padding-bottom:155px;
+					margin-right:80px;
+				}
+				.img-div-2{
+					width:50%;
+					background-image:url(section-7bg.png);
+					background-repeat:no-repeat;
+					background-size:100% 80%;
+					background-position:center;
+				}
+				.words-form-chef-section{
+					padding-top:110px;
+					padding-bottom:140px;
+				}
+				.words-form-chef{
+					background-color:var(--tershary);
+					padding:0px 75px;
+					border-radius:74px;
+				}
+				
+				.text-div{
+					width:35%;
+				}
+				.chef-img{
+					width:59%;
+				}
+				.chef-text{
+					font-size: 29px;
+					color:var(--text-secondary);
+					font-weight: 600;
+					font-family: "Montserrat";
+				}
+				.section-8-img{
+					width:715px;
+					height:590px;
+				}
+				.customer-says-div{
+					padding-bottom:100px;
+				}
+				.customer-image{
+					margin:0px;
+					width:200px;
+					height:200px;
+				}
+				.inner-one{
+					box-sizing:border-box;
+					width:43%;
+					background:var(--tershary);
+					border-radius: 40px;
+					padding:45px 20px 45px 25px;
+					box-shadow: -5px 5px 5px 2px var(--shadow);
+				}
+				.center{
+					margin:50px auto 0px;
+				}
+				.name{
+					font-size: 29px;
+					color: var(--text-tershary);
+					font-weight: 900;
+					padding-bottom:10px;
+					font-family: "Playfair Display";
+				}
+				.customer-response{
+					width:270px;
+					font-size: 14px;
+					line-height:21px;
+					color:var(--text-tershary);
+					font-weight: 600;
+					text-align:left;
+					font-family: "Montserrat";
+				}
+				.star{
+					margin-top:25px;
+					margin-left:0px;
+				}
+				.inner-date{
+					font-size: 16px;
+					color: var(--date);
+					font-weight: 700;
+					font-family: "Montserrat";
+					text-align: right;
+				}
+				.flex-end{
+					align-items:flex-end;
+				}
+				.form-section{
+					
+					background-image:url(section-10bg.png);
+					background-repeat:no-repeat;
+					background-size:92% 100%;
+					background-position:center;
+					padding-bottom:100px;
+				}
+				.form-back-div{
+					width:885px;
+					margin:0px auto;
+				}
+				.input{
+					width:99.5%;
+					box-sizing:border-box;
+					border-radius:50px;
+					font-size: 21px;
+					line-height:31px;
+					color: var(--text-tershary);
+					font-weight: 600;
+					font-family: "Montserrat";
+					text-align: left;
+					padding:30px 60px 30px;
+					background-color:var(--input);
+					outline:0px;
+					border:2px solid var(--text-primary);
+					margin-bottom:30px;
+				}
+				.message-input-box{
+					padding-bottom:140px;
+					margin-bottom:40px;
+				}
+				placeholder{
+					color: var(--text-tershary);
+				}
+				.form-button{
+					font-size: 21px;
+					width:250px;
+					padding:15px 15px;
+					border-radius:50px;
+					background: var(--btn-secondary);
+					color: var(--text-quaternary);
+					font-weight: 700;
+					border:2px solid var(--text-primary);
+					font-family: "Montserrat";
+					text-align: center;
+					cursor:pointer;
+					margin:0px auto;
+				}
+				.form-button:hover{
+					background: var(--text-quaternary);
+				}
+				.button-color{
+					font-size: 21px;
+					color:var(--text-tershary);
+					font-weight: 700;
+					text-decoration:none;
+					font-family: "Montserrat";
+				}
+				.button-color:hover{
+					color: var(--btn-secondary);
+				}
+				footer{
+					padding:155px 0px;
+					background-color:var(--footer-primary);
+				}
+				.about{
+					width:25%;
+				}
+				.what-we-do{
+					width:35%;
+				}
+				.news-letter{
+					width:40%;
+					text-align:right;
+				}
+				.links{
+					color:var(--text-tershary);
+					font-size: 25px;
+					line-height: 67px;
+					font-weight: 700;
+					font-family: "Montserrat"
+				}
+				.heading{
+					font-size: 42px;
+					color: var(--text-primary);
+					font-weight: 900;
+					font-family: "Playfair Display";
+					padding-bottom:40px;
+				}
+				.footer-input{
+					background:var(--footer-primary);
+					border-radius:50px;
+					padding:20px 0px;
+					border:2px solid var(--secondary);
+					margin-bottom:60px;
+					width:100%;
+				}
+				.social-media{
+					width: 320px;
+					display: flex;
+					justify-content: space-between;
+				}
+				.facebook-img{
+					background-color: white;
+					width: 50px;
+					height: 50px;
+					border-radius: 50%;
+					background-image: url(https://cdn3.iconfinder.com/data/icons/picons-social/57/06-facebook-512.png);
+					background-repeat: no-repeat;
+					background-size: 40px 40px;
+					background-position: center center;
+				}
+				.facebook-img:hover{
+					background-image: url(https://cdn2.iconfinder.com/data/icons/social-media-and-payment/64/-04-512.png);
+					background-repeat: no-repeat;
+					background-size: 40px 40px;
+				}
+				.instagram-img{
+					background-color: white;
+					width: 50px;
+					height: 50px;
+					border-radius: 50%;
+					background-image: url(https://cdn4.iconfinder.com/data/icons/picons-social/57/38-instagram-2-512.png);
+					background-repeat: no-repeat;
+					background-size: 40px 40px;
+					background-position: center center;
+				}
+				.instagram-img:hover{
+					background-image: url(https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Instagram-512.png);
+					background-repeat: no-repeat;
+					background-size: 30px 30px;
+				}
+				.you-tube-img{
+					background-color: white;
+					width: 50px;
+					height: 50px;
+					border-radius: 50%;
+					background-image: url(https://cdn3.iconfinder.com/data/icons/font-awesome-brands/576/youtube-512.png);
+					background-repeat: no-repeat;
+					background-size: 40px 40px;
+					background-position: center center;
+				}
+				.you-tube-img:hover{
+					background-image: url(https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/395_Youtube_logo-512.png);
+					background-repeat: no-repeat;
+					background-size: 30px 30px;
+				}
+				
+			}
+		</style>
+	</head>
+	<body>
+		<!--header-start-->
+			<header>
+				<div class="container">
+					<div class="toolbar">
+						<div class="logo">
+							<p><a href="#" class="li-anchor">YourLogo</a></p>
+						</div>
+						<div class="nev">
+							<ul type="none" class="flex space-between">
+								<li><a href="#" class="li-anchor"> Home</a></li>
+								<li><a href="#" class="li-anchor">menu</a></li>
+								<li><a href="#" class="li-anchor"> About Us</a></li>
+								<li><a href="#" class="li-anchor"> Contact</a></li>
+							</ul>	
+						</div>
+						<div class="sign-up">
+							<p><a href="#" class="sign-anchor"> Sign up</a></p>
+						</div>
+						<div class="humberger">
+							<a href="#"><img src="588a64e0d06f6719692a2d10 (1).png" width="50px" height="50px"></a>
+						</div>
+					</div>
+				</div>
+			</header>
+		<!--header-end-->
+		<!--banner-1-start-->
+		<section class="banner-1">
+			<div class=" container">
+				<h1 class="eat-drink-text">
+					Eat, drink and 
+					<span class="block"n>Enjoy.</span>
+				</h1>
+				<p class="sub-text">Your Restaurant is Waiting For You</p>
+				<p class="discription">
+						orem ipsum dolor sit amet, consectetur adipiscing elit,
+						<span class="block"> sed do eiusmod tempor incididunt ut</span>
+				</p>
+				<div class="flex align-item width">
+					<div class="btn-primary"> Explore</div>
+					<p class="see-menu-text"><a href="#" class="anchor"> See Menu</a></p>
+				</div>
+				<div class="flex align-item">
+					<p class="book-table">Book a Table</p>
+					<img src="Arrow 1.png" class="arrow-1"/>
+				</div>
+				<div class="table-back-div">
+					<div class="appt">
+						<div class="date-div">
+							<form>
+								<label for="date"> Date <img src="Arrow 2.png"></label>
+								<input type="date" id="date" class="date">
+							</form>
+						</div>
+						<div class="date-div">
+							<form>
+								<label for="time"> Time <img src="Arrow 2.png"></label>
+								<input type="time" id="time" class="time">
+							</form>
+						</div>
+						<div class="mail-div">
+							<form>
+								<label for="mail"> Mail <img src="Arrow 2.png"></label>
+								<input type="email" id="mail" placeholder="Enter Your Mail" class="mail">
+							</form>
+						</div>
+						
+					</div>
+					<div class="avaibility">
+						<div class="submit">
+							<form>
+								<input type="submit" value="Cheek Aviability" class="submit-btn">
+							</form>
+						</div>
+					
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--banner-1-end-->
+		<!--banner-2-start-->
+			<section class="banner-2">
+				<div class="container">
+					<h3 class="delicious"> Delicious </h3>
+					<h1 class="categories"> Food Categories</h1>
+					<div  class="flex space-between">
+						<div class="inner-div">
+							<img src="dish-1.png" class="img-dish"/>
+							<h1 class="inner-heading">Meat</h1>
+							<p class="discription text-align"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u</p>
+							<div class="btn-primary inner-btn"> Read More</div>
+						</div>
+						<div class="inner-div">
+							<img src="dish-2.png" class="img-dish"/>
+							<h1 class="inner-heading">Fish</h1>
+							<p class="discription text-align"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u</p>
+							<div class="btn-primary inner-btn"> Read More</div>
+						</div>
+						<div class="inner-div">
+							<img src="dish-3.png" class="img-dish"/>
+							<h1 class="inner-heading">Drinks</h1>
+							<p class="discription text-align"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u</p>
+							<div class="btn-primary inner-btn"> Read More</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		<!--banner-2-end-->
+		<!--banner-3-start-->
+		<section class="banner-3">
+			<div class="container">
+				<h3 class="covid-text">COVID-19  Protocol</h3>
+				<h1 class="categories padding-bottom"> We care about you</h1>
+				<div  class="btn-tershary">Read more</div>
+			</div>
+		</section>
+		<!--banner-3-end-->
+		<!--banner-4-start-->
+		<section >
+			<div class="container flex space-between">
+				<div class="story-div">
+					<p class="story-text">Story</p>
+					<p class="resto">Our Restaurant</p>
+					<p class="lorem-ipsum">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+						sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+						sed do eiusmod tempor incididunt ut labore et dolore magna.
+					</p>
+					<div class="btn-primary">Read more</div>
+				</div>
+				<div class="img-div"></div>
+			</div>
+		</section>
+		<!--banner-4-end-->
+		<!--banner-5-start-->
+		<section >
+			<div class="container flex space-between">
+				<div class="img-div-2"></div>
+				<div class="ingredians-div">
+					<p class="story-text">Ingredients</p>
+					<p class="resto">Fresh and healthy 
+						ingredients
+					</p>
+					<p class="lorem-ipsum">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+						sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+						sed do eiusmod tempor incididunt ut labore et dolore magna.
+					</p>
+					<div class="btn-primary color">Read more</div>
+				</div>
+			</div>
+		</section>
+		<!--banner-5-end-->
+		<!--banner-6-start-->
+		<section class="words-form-chef-section">
+			<div class="container">
+				<div class="words-form-chef flex space-between align-item">
+					<div class="text-div">
+						<p class="chef-text">Words from</p>
+					<p class="resto">The Chef</p>
+					<p class="lorem-ipsum">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+						sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+						sed do eiusmod tempor incididunt ut labore et dolore magna.
+					</p>
+					<div class="btn-primary">Read more</div>
+				
+					</div>
+					<div class="chef-img">
+						<img src="section-8bg.png" class="section-8-img">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--banner-6-end-->
+		<!--banner-7-start-->
+		<section class="customer-says-div">
+			<div class="container">
+					<h3 class="delicious"> What our</h3>
+					<h1 class="categories"> Customers Say</h1>
+					<div class="flex space-between">
+						<div class="inner-one flex align-item space-between">
+							<img src="Customer-1.png" class="customer-image">
+							<div>
+								<p class="name flex space-between flex-end"> Jhon Smith
+									<span class="inner-date">aug/12/21</span>
+								</p>
+								<p class="customer-response">
+									“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.”
+								</p>
+								<img src="star.png" class="star">
+							</div>
+						</div>
+						<div class="inner-one flex align-item space-between">
+							<img src="Customer-2.png"  class="customer-image">
+							<div>
+								<p class="name flex space-between flex-end"> Sara Jonson
+									<span class="inner-date">aug/12/21</span>
+								</p>
+								<p class="customer-response">
+									“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.”
+								</p>
+								<img src="star.png" class="star">
+							</div>
+						</div>
+						<div class="inner-one flex align-item space-between center">
+							<img src="Customer-3.png"  class="customer-image">
+							<div>
+								<p class="name flex space-between flex-end"> Jhon Smith
+									<span class="inner-date">aug/12/21</span>
+								</p>
+								<p class="customer-response">
+									“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.”
+								</p>
+								<img src="star.png" class="star">
+							</div>
+						</div>
+					</div>
+			</div>
+		</section>
+		<!--banner-7-end-->
+		<!--banner-8-start-->
+		<section class="form-section">
+			<div class="container">
+					<h3 class="delicious"> Subscribe</h3>
+					<h1 class="categories"> To Our Newsletter</h1>
+					<div class="form-back-div">
+						<form>
+							<input type="text" placeholder="Name" class="input"/>
+							<input type="text" placeholder="Mail" class="input"/>
+							<input type="text" placeholder="Messages" class="input message-input-box"/>
+						</form>
+						<div class="form-button">
+							<a href="" class="button-color">SEND MESSAGE</a>
+						</div>
+					</div>
+			</div>
+		</section>
+		<!--banner-8-end-->
+		<!--footer-stat-->
+		<footer>
+			<div class="container flex">
+				<div class="about">
+					<ul type="none">
+						<li class="heading">About</li>
+						<li><a href="#" class="links">History</a></li>
+						<li><a href="#" class="links">Our Team</a></li>
+						<li><a href="#" class="links">Mission Statement</a></li>
+						<li><a href="#" class="links">Term & Condition</a></li>
+						<li><a href="#" class="links">Privacy Policy</a></li>
+					</ul>
+				</div>
+				<div class="what-we-do">
+					<ul type="none">
+						<li class="heading">What we do</li>
+						<li><a href="#" class="links">News and stories</a></li>
+						<li><a href="#" class="links">Publications</a></li>
+						<li><a href="#" class="links">Take action</a></li>
+						<li><a href="#" class="links">Recomendations</a></li>
+						<li><a href="#" class="links">Help</a></li>
+					</ul>
+				</div>
+				<div class="news-letter">
+					<p class="heading">
+						Sign Up To Receive</br>
+						Our Newsletter
+					</p>
+					<form>
+						<input type="text" class="footer-input">
+					</form>
+					<div class="flex space-between">
+						<p class="links">Follow us!</p>
+						<div class="social-media">
+							<div class="facebook-img">
+							
+							</div>
+							<div class="instagram-img">
+							
+							</div>
+							<div class="you-tube-img">
+							
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--footer-end-->
+	</body>
+</html>
